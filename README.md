@@ -5,33 +5,33 @@ There are two main components, the steering wheel, and RC car code. the steering
 Pins to the Elegoo Mega: 
 
 Wheel 	
-VCC - > 5V 
-Serial -> A8 
-Ground -> Ground 
+* VCC - > 5V 
+* Serial -> A8 
+* Ground -> Ground 
 
 Forward Pedal 	
-VCC -> Reverse 5V Out 
-Serial -> A1 
-Ground -> Reverse Ground 
+* VCC -> Reverse 5V Out 
+* Serial -> A1 
+* Ground -> Reverse Ground 
 
 Reverse Pedal 	
-VCC -> 5V 
-Serial -> A2 
-Ground -> Ground 
+* VCC -> 5V 
+* Serial -> A2 
+* Ground -> Ground 
 
 Shift Knob 	
-VCC -> 3.3V 
-Serial 1 -> Leave Disconnected 
-Serial 2 -> D13 
+* VCC -> 3.3V 
+* Serial 1 -> Leave Disconnected 
+* Serial 2 -> D13 
 
 Radio Chip 	
-VCC -> 3.3V 
-Ground -> Ground 
-CE -> D10 
-CSN -> D11 
-SCK -> D52 
-MOSI -> D51 
-MISO -> D50 
+* VCC -> 3.3V 
+* Ground -> Ground 
+* CE -> D10 
+* CSN -> D11 
+* SCK -> D52 
+* MOSI -> D51 
+* MISO -> D50 
 
 # Brief Code Explanation 
 The code uploaded onto the RC car is left short and simple to use less battery usage due to having less processing to perform. It receives the data from the RecordData(); function then remaps it for the various motors through the MotorWrite(); function. 
